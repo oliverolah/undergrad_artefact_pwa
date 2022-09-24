@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GuitarLessonsPWA</title>
+        <link rel="stylesheet" href="../css/styles-index.css">
+        <link rel="manifest" href="../manifest.json">
+        <meta name="theme-color" content="#189AFE">
+    </head>
+    <body>
+        
+        <!-- Container for GUITAR BCKGRND -->
+        <div class="hero-container">
+            <header>
+                                
+                <!-- Logo of the PWA -->
+                
+                <div class="wrapper" class="wrapper-i">
+                    <img src="../images/GuitarLessonsPWA.png" alt="PWA logo" class="logo">
+                </div>
+                <!-- Navigation bar -->
+                <nav>
+                    <ul class="navBar">
+                        <li><a href="#">Home</a></li>                    
+                        <li><a href="courses.html">Courses</a></li>                    
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+        
+                <!-- Main Section 1 -->
+                <section class="section-1">
+
+                    <h1 class="hero_header">GuitarLessonsPWA</h1>
+
+                    <div class="hero-text">
+                        <p>Learn to play the guitar just like your hero! Start from the beginning right now! Become a hero!</p>
+                        <p><strong>Sign in</strong> for great courses that will fit your needs! They all provide you with the necessary essentials with the information for mastering your guitar playing!</p>
+                    </div>
+
+                    <a href="courses.html" class="cta-top">
+                        <!-- <button class="cta-top">Explore</button> -->
+                        Explore
+                    </a>
+                </section>
+            
+        </div>
+            
+        <!-- Main Profile Section 2 -->
+        <section class="section-2">
+
+            <img src="../images/profile-small.png" class="profile-pic" alt="My Profile Picture">
+
+            <h1 class="profile-header">Hello! I am Oliver Olah. Creator and founder of GuitarLessonsPWA. To find out more, click below!</h1>
+
+            <a href="profile.html" class="cta-bottom">
+                <!-- <button class="cta-bottom">Read More</button> -->
+                Read More
+            </a> 
+            
+        </section>
+
+        <!-- Bottom Section 3 -->
+        <footer>
+
+            <div class="footer-container">
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <p class="footer-mark">2019/20 GuitarLessonsPWA  GCU</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script>
+
+        // CSS -> 'body' element do make it display although specified 'none'
+        document.addEventListener("DOMContentLoaded", function(event) {
+
+            window.addEventListener("load", function(e) {
+
+                // modify CSS -> 'body, html' element to display it, to a block level
+                document.body.style.display = "block";
+
+                // instance tl = timeline
+                var tl = new TimelineMax();
+
+                    // targets all sections applying a section to it
+                    // (parameters, 2) 2 = how long deos the animation lasts
+                    // 'from', 'staggerFrom' nothing -> the full page
+                    // if used 'to' it would do the opposite
+                    tl.staggerFrom('section', 2, {
+                        // opacity 0 = hidden
+                        opacity: 0,
+                        // .5 half reveal
+                        scale: .5,
+                        // animation motion of revelation
+                        ease: Power2.easeOut
+                    // delay, stagger duration between each element
+                    // they go one after the other
+                    }, 0.2)
+
+                    tl.staggerFrom('h1, h2', .5, {
+                        opacity: 0,
+                        y: -40,
+                        ease: Power2.easeInOut
+                    // + adding offset to make them appear rather simultaneously but after the other
+                    }, 0.2, "-=2")
+
+                    // using "." in front of 'aimm-panel = CLASS
+                    tl.staggerFrom('.anim-panel', 1, {
+                        opacity: 0,
+                        y: -40,
+                        ease: Power2.easeInOut
+                    // + adding offset to make them appear rather simultaneously but after the other
+                    }, 0.2, "-=1.5")
+
+            }, false);
+        });
+        </script>
+
+        <script src="../js/app.js"></script>
+
+    </body>
+</html>

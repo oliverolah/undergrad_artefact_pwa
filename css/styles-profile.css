@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body {
+    /* by default */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.logo-wrapper {
+    background-color: rgb(98, 219, 238);
+    width: 100%;
+    display: block;
+}
+.top-logo {
+    display: block;
+    margin: auto;    
+    padding: .8em 0;    
+    width: 250px;
+    background-color: inherit;   
+}
+
+/* left side */
+
+.left-side {
+    background: url(/images/userProfile.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* height: 662px; */
+    height: 100vh;
+
+}
+
+.left-side h1 {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 1em;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 95px;
+    left: 0; 
+}
+
+.left-side p {
+    color: white;
+    font-size: 1rem;
+    padding-left: 1.6em;
+    margin: .5em 0 0 0;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.arrow-down {
+    /* top: 600px; */
+    top: 87%;
+    position: relative;
+    height: 45px;
+    margin: auto;
+    display: block;
+    animation: move 1s infinite alternate;
+}
+
+/* for arrow-down */
+@keyframes move {
+    0% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
+
+/* middle part */
+
+.middle {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#50c9d1+29,64f3fb+84,64f3fb+100 */
+    background: #50c9d1; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #50c9d1 29%, #64f3fb 84%, #64f3fb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #50c9d1 29%,#64f3fb 84%,#64f3fb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #50c9d1 29%,#64f3fb 84%,#64f3fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50c9d1', endColorstr='#64f3fb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin: 0;
+    padding: 0;
+    height: 360px;
+}
+
+.logo {
+    display: none;
+}
+
+.middle h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.1em 0;
+}
+
+.middle p {
+    color: white;
+    margin: 0 2.5em 2em 2.5em;
+    font-size: 1rem;
+}
+
+.bottom-p {
+    font-weight: bold;
+}
+
+/* right side */
+
+.right-side {
+    background: #EFEFEF;
+    margin: 0;
+    padding: 0;
+}
+
+.right-side h2 {
+    text-align: center;
+    margin: 0 0 2em 0;
+    padding-top: 1.5em;
+}
+
+.social-media-list {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.social-media-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-media-list li {
+    display: inline-block;
+    margin: 1.5em 1.2em 1.5em 1.2em;
+    padding: 0;
+    position: relative;
+}
+
+.social-media-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-media-list img {
+    height: 35px;
+}
+
+@media only screen and (min-width: 560px) {
+
+    .middle {
+        height: 300px;
+    }
+    
+    .arrow-down {
+        display: none;
+    }
+
+    .left-side h1 {
+        bottom: 85px; 
+    }
+    
+    .left-side p {
+        bottom: 55px;
+    }
+
+}
+
+@media only screen and (min-width: 712px) {
+
+    .middle {
+        height: 290px;
+    }
+    
+    .left-side h1 {
+        color: black; 
+    }
+    
+    .left-side p {
+        color: black; 
+    }
+
+    .middle h2 {
+        font-size: 1.5rem;
+        padding: 1.1em 0;
+    }
+    
+    .middle p {
+        margin: 0 2.8em 2em 2.8em;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .middle p {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    
+    .logo-wrapper {
+        display: none;
+    }
+    
+    section {
+        float: left;
+        width: 33.33%;
+        height: 100vh;
+    }
+
+    .left-side {
+        height: 100vh;
+    }
+
+    .left-side h1 {
+        color: white;       
+    }
+
+    
+    .left-side p {
+        color: white;
+    }
+
+    /* middle */
+
+    .middle {
+        height: 100vh;
+    }
+
+    .logo {
+        margin: 2.2em auto 0 auto;
+        display: block;
+        width: 320px;
+    }
+
+    .middle h2 {
+        text-align: left;
+        margin-left: 2.3em;
+    }
+
+    .middle p {
+        margin-left: 3em;
+        font-size: 1.1em;
+    }
+    
+
+    /* right side */
+
+    .right-side {
+        background: #EFEFEF;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .right-side h2 {
+        margin-bottom: 2em;
+        top: 35%;
+        position: relative;
+    }
+    
+    .social-media-list {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 30%;
+    
+    }
+    
+    .social-media-list ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+    }
+    
+    .social-media-list li {
+        display: inline-block;
+        margin: 1.5em 1.2em 1em 1.2em;
+        padding: 0;
+        position: relative;
+        
+    }
+    
+    .social-media-list a {
+        color: black;
+        text-decoration: none;
+    }
+    b
+    .social-media-list img {
+        height: 35px;
+    }
+    
+}
+
+@media only screen and (min-width: 1390px) {
+    
+    .middle h2 {
+        margin-left: 3.5em;
+        padding-bottom: .5em;
+        padding-top: 3.6em;
+    }
+    
+    .middle p {
+        margin: .5em 4.7em;
+        font-size: 1.1rem;
+    }
+
+}

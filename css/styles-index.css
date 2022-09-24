@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-container {
+    background: url(../images/the_guitar_main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 440px;
+}
+
+.wrapper-i {
+    background-color: rgb(98, 219, 238);
+    width: 100%;
+}
+.logo {
+    display: block;
+    margin: auto;    
+    padding: .8em 0;    
+    width: 250px;    
+}
+
+nav {
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+}   
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 18px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.15s linear;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.section-1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* section-1 */
+
+.section-1 h1 {
+    margin: 0 auto 1em auto;
+    text-align: center;
+    padding-top: 1.3em;
+    font-size: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1rem;
+    margin: 0 1.5em; 
+}
+
+.cta-top {
+    background: #92d0ff; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #92d0ff 19%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #92d0ff 19%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #92d0ff 19%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92d0ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 13px;
+    line-height: 15px;
+    color: #000000;
+    width: 140px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px;
+    box-shadow: 6px 9px 11px 0px #000000;
+    -webkit-box-shadow: 6px 9px 11px 0px #000000;
+    -moz-box-shadow: 6px 9px 11px 0px #000000;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* section-2 */
+
+.section-2 {
+    margin: 0;
+    padding: 0;
+    height: 450px;
+}
+
+.profile-pic {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: block;
+    width: auto;
+}
+
+.profile-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 1em 0 1em;
+}
+
+.cta-bottom {
+    background: #92d0ff; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #92d0ff 19%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #92d0ff 19%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #92d0ff 19%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92d0ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 13px;
+    line-height: 15px;
+    color: #000000;
+    width: 140px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px;
+    box-shadow: 6px 9px 11px 0px #000000;
+    -webkit-box-shadow: 6px 9px 11px 0px #000000;
+    -moz-box-shadow: 6px 9px 11px 0px #000000;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: 2em auto;
+}
+
+/* footer */
+
+footer {
+    margin: 0;
+    margin-top: auto;
+    padding: 0;
+    width: 100%;
+    height: 62px;
+    background-color: #51CAD2;
+    
+    
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container li {
+    display: inline-block;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: .9em 1.2em;
+    font-size: .9rem;
+    margin: auto;
+}
+
+.footer-mark {
+    margin: auto;
+    margin-right: .6em;
+    text-align: right;
+    font-size: .7rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero-container {
+        background: url(../images/the_guitar_main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 450px;
+    }
+    
+    .section-1 h1 {   
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+        margin: 0 2em; 
+    }
+
+    /* section-2 */
+
+    .profile-header {
+        font-size: 1.8rem;
+    }
+
+    /* .footer {
+        position: absolute;
+        bottom: 0;
+    } */
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .hero-container {
+        background: url(../images/the_guitar_main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        /* splits the 2 elements to the columns */
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    .wrapper-i {
+        background: inherit;
+        margin-right: 0;
+        width: auto;
+        position: relative;
+        top: -6px;
+    }
+
+    .logo {
+        /* scales it down slightly */
+        width: 250px;
+        height: 35px;
+        cursor: pointer;
+        margin-left: 2em;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1.8em;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 30px;
+        padding-top: 35px;
+        position: relative;
+    }
+    
+    nav a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    nav a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 0%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.15s linear;
+    
+    }
+    
+    nav a:hover::before {
+        width: 100%;
+    }
+
+    .section-1 h1 {   
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 4em;
+        margin-left: 1.5em; 
+    }
+
+    .hero-text {
+        font-size: 1.4rem; 
+        margin-left: 2.1em;
+        width: 45%;
+    }
+
+    .cta-top {
+        align-self: right;
+        margin-left: 2.8em;
+        margin-top:  3em;
+    }
+
+    /* section-2 */
+
+    .profile-pic {
+        height: 95px;
+        padding:  0 auto 3em auto;
+    }
+
+    .profile-header {
+        font-size: 2rem;
+        margin-bottom: 1.8em;
+    }
+
+    .cta-bottom {
+        margin-bottom: 3.2em;
+    }
+
+    /* section-3 */
+
+
+
+}
+
+@media only screen and (min-width: 1128px) {
+    
+    header {
+        display: flex;
+        /* splits the 2 elements to the columns */
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    .wrapper-i {
+        background: inherit;
+        margin-right: 0;
+        width: auto;
+        position: relative;
+        top: -2px;
+    }
+
+    .logo {
+        cursor: pointer;
+        margin-left: 2em;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 2em;
+    }
+    
+    nav li {
+        margin-left: 30px;
+        padding-top: 42px;
+    }
+
+    .section-1 h1 {   
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 5em;
+        margin-left: 1.5em;
+        padding: 0; 
+    }
+
+    .cta-top {
+        position: absolute;
+    }
+
+    /* section-2 */
+
+    .profile-header {
+        margin-left: 5.5em;
+        margin-right: 5.5em;
+        padding: 0;
+    }    
+  }

@@ -1,0 +1,35 @@
+{
+    "name": "GuitarLessonsPWA",
+    "short_name": "GLPWA",
+    "start_url": "/html/index.html",
+    "display": "standalone",
+    "background_color": "#51CAD2",
+    "theme_color": "#189AFE",
+    "icons": [
+        {
+            "src": "/images/icons/guitar-64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/images/icons/guitar-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/images/icons/guitar-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icons/guitar-256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/images/icons/guitar-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
